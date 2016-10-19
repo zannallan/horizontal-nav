@@ -37,7 +37,7 @@ css:
       - ['html', 'box-sizing', 'border-box']
       - ['*', 'box-sizing', 'inherit']
       - ['body', 'margin', '0']
-      - ['h1', 'font-family', '"Bevan", serif']
+      - ['h1', 'font-family', 'Bevan, serif']
     search:
       - 'margin'
       - 'padding'

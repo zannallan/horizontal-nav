@@ -20,8 +20,8 @@ deliverables: "1 HTML file, 1 CSS file"
 - *Typefaces:* `Bevan` (from Google Fonts), `sans-serif`
 - *Line height:* `1.5`
 - *Colours:* `#fff`, `#79756f`, `#595652`, `#713837`, `#f33`, `#dbd6cf`
-- *Paddings:* `.6em`, `0.5em 0.75em`
-- *Margin:* `0.3em`
+- *Paddings:* `.6em`, `.5em .75em`
+- *Margin:* `.3em`
 
 ---
 
