@@ -1,22 +1,20 @@
 repo: 'horizontal-nav'
 canvasCourse: 'web-dev-1'
 
-naming: true
-restrictFileTypes: true
-liveWebsite: true
-
-git:
-  numCommits: 2
-  allCommitted: true
-  allSynced: true
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - css
+  - box-sizing
+  - body-margin-0
+  - google-fonts
+  - nav-hover
 
 html:
   - path: 'index.html'
-    valid: true
-    bestPractices: true
-    outline: true
     has:
-      - ['link[href*="fonts.googleapis.com/css?family=Bevan"]', 'The Google Font `Bevan` is missing']
+      - ['link[href*="Bevan"]', 'The Google Font, `Bevan`, is missing']
       - 'header'
       - 'header h1'
       - 'header nav'
@@ -31,12 +29,7 @@ html:
 
 css:
   - path: 'css/main.css'
-    valid: true
-    bestPractices: true
     has:
-      - ['html', 'box-sizing', 'border-box']
-      - ['*', 'box-sizing', 'inherit']
-      - ['body', 'margin', '0']
       - ['h1', 'font-family', 'Bevan, serif']
     search:
       - 'margin'
@@ -51,21 +44,7 @@ css:
       - '#595652'
       - '#713837'
       - '#f33'
-    search_not:
-      - ['font-size\s*:\s*.+px', 'Pixel units should not be used for `font-size` — use `rem` instead']
 
 screenshots:
   - path: 'index.html'
     sizes: [400, 650]
-
-functionality:
-  - path: 'index.html'
-    tests:
-      - |
-        let link = $('nav a');
-        let oldBg = css(link).backgroundColor;
-
-        hover('nav a', function () {
-          if (css(link).backgroundColor == oldBg) fail('The background colour of the navigation link doesn’t change when hovered')
-          pass();
-        });
