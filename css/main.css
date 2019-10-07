@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+  background-color: #dbd6cf;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+header {
+  background-color: #79756f;
+  border-top: 2px solid #595652;
+  border-bottom: 2px solid #595652;
+  padding: .6rem;
+}
+
+h1 {
+  font-family: 'Bevan', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 0 .3rem;
+}
+
+nav {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+ul {
+  padding: 0 .5rem 0 .6rem;
+  margin: 0;
+}
+
+nav li {
+  border-radius: 5px;
+  padding: .75rem;
+  background-color: #713837;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
