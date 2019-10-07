@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 *, *::before, *::after {
@@ -21,7 +22,7 @@ header {
 }
 
 h1 {
-  font-family: Bevan, sans-serif;
+  font-family: Bevan, serif;
   color: #fff;
   text-align: center;
   padding-bottom: .5rem;
